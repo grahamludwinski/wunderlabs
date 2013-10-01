@@ -1239,7 +1239,7 @@ footer p {
 
 /* specialties */
 .specialties {
-	padding: 3rem 1rem;
+	padding: 3rem 0rem;
 	text-align: center;
 }
 .specialtyIcon {
@@ -1319,7 +1319,6 @@ footer p {
 .designIcon {
 	padding-top: .3rem;
 }
-
 .processCircle:hover {
 	background: rgba(255,255,255,0.4);
 
@@ -1333,6 +1332,7 @@ footer p {
 	visibility: visible;
 }
 /* end process */
+
 @media (max-width: 1400px) {
 	.processContainer {
 		width: 50%;
@@ -1373,22 +1373,27 @@ footer p {
 	.twoThirds {
 		width: 100%;
 	}
-	
 	body {
 		text-align: center;
 		padding-top: 68px;
 		padding: 0;
 	}
-	
 	.headerImage h2 {
 		line-height: 1;
 		font-size: 2.8rem;
 	}
-	
-	h2,.specialties h2 {
-		font-size: 3rem;
+	.specialtyDescription {
+		text-align: left;
+		display: inline-block;
+		width: 90%;
+		max-width: 35rem;
 	}
-	
+	.specialtyDescription h3 {
+		font-size: 2rem;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
 	.title {
 		margin: 0;
 		padding: 0;
@@ -1396,25 +1401,20 @@ footer p {
 		height: 2.4rem;
 		text-align: left;
 	}
-	
 	.mainNav li a {
 		margin: .3rem .3rem 0 0;
 		padding: .3rem .6rem;
 	}
-	
 	header {
 		position: static;
 		text-align: left;
 	}
-	
 	#headerLogo {
 		display: inline-block;
 	}
-	
 	.description .middle {
 		padding: 1rem 0rem;
 	}
-	
 	.description .peekLogoContainer {
 		position: static;
 		margin: 0 auto;
@@ -1424,26 +1424,22 @@ footer p {
 		width: 100%;
 		padding: 0;
 	}
-	
 	.peekLogo {
 		width: 50%;
 	}
 	.padded {
 		padding: 0;
 	}
-	
 	.half {
 		width: 100%;
 		padding: 1rem;
 		text-align: center;
 	}
-	
 	.skills .half {
 		width: 100%;
 		padding: 1rem 0;
 		text-align: center;
 	}
-	
 	.headerImage {
 		padding: .8rem 1rem 3rem;
 		background-position: 50% 100%;
@@ -1452,15 +1448,12 @@ footer p {
 		-moz-background-size: 200% 100%;
 		background-size: 200% 100%;
 	}
-	
 	.headerImage h2 {
 		font-size: 3rem;
 	}
-	
 	.fourth {
 		width: 100%;
 	}
-	
 	.features .fourth {
 		width: 60%;
 	}
@@ -1478,28 +1471,22 @@ footer p {
 		width: 100%;
 		padding: .5rem 0;
 	}
-	
 	.contactForm {
 		padding: 0;
 	}
-	
 	.middle {
 		padding: 0;
 	}
-	
 	.contactForm input,.contactForm textarea {
 		width: 100%;
 		max-width: none;
 	}
-	
 	.container {
 		padding: 1rem .5rem;
 	}
-	
 	.roundButton {
 		margin-bottom: 0;
 	}
-	
 	.serviceButton {
 		padding: 0;
 		margin-bottom: 2rem;
