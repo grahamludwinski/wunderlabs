@@ -1001,7 +1001,7 @@ top:  .5rem;
 
 .headerImage h2 {
 	color: #FFFFFF;
-	font-size: 4rem;
+	
 	margin: 0 0 2rem;
 	font-family: 'Bebas Neue';
 	font-weight: 200;
@@ -1192,9 +1192,11 @@ details summary:hover::-webkit-details-marker {
 }
 .contactForm .button:hover {
 	background-color: #FF4F38;
+	color: #FFFFFF;
 }
 .contactForm .button:active {
 	background-color: #FF3D24;
+	color: #FFFFFF;
 }
 .notVertical {
 	vertical-align: top;
@@ -1345,6 +1347,9 @@ footer p {
 	.headerImage {
 		padding: 1rem;
 	}
+	.headerImage .fourth {
+		width: 50%;
+	}
 	.processContainer {
 		width: 100%;
 		
@@ -1377,10 +1382,6 @@ footer p {
 		text-align: center;
 		padding-top: 68px;
 		padding: 0;
-	}
-	.headerImage h2 {
-		line-height: 1;
-		font-size: 2.8rem;
 	}
 	.specialtyDescription {
 		text-align: left;
@@ -1448,7 +1449,11 @@ footer p {
 		-moz-background-size: 200% 100%;
 		background-size: 200% 100%;
 	}
-	.headerImage h2 {
+	.headerImage .fourth {
+		width: 100%;
+	}
+	h2 {
+		line-height: 1;
 		font-size: 3rem;
 	}
 	.fourth {

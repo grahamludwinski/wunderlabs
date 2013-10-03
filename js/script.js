@@ -1,5 +1,6 @@
 /* eliminate touch delay on iphone */
-document.addEventListener("touchstart", function(){}, true);
+document.addEventListener("touchstart", function(){
+}, true);
 document.addEventListener("touchend", function(){}, true);
 
 function scrollTo(location) {
