@@ -3,7 +3,7 @@ document.addEventListener("touchstart", function(){
 }, true);
 document.addEventListener("touchend", function(){}, true);
 
-function scrollTo(location) {
+function scrollToLoc(location) {
 	$('html, body').animate({ scrollTop: location.offset().top-50 }, 700);
 }
 
@@ -53,23 +53,24 @@ $(document).ready(function() {
 	});
 	
 	$('.contactLink').on('click', function() {
-		scrollTo($('#contact'));
+		scrollToLoc($('#contact'));
 		return false;
 	});
 	
 	$('.scrollLink').on('click', function() {
 		var location = $(this).data('scrollLocation');
-		scrollTo($('#'+location));
+		scrollToLoc($('#'+location));
 		return false;
 	});
 	
 	$('#scrollToTop').on('click', function() {
 		var location = $('body');
-		scrollTo(location);
+		scrollToLoc(location);
 		return false;
 	});
 	
-	$(window).scroll(function() {
+	/*
+$(window).scroll(function() {
 		if($(this).scrollTop() > 300) {
 			 $('#scrollToTop').fadeIn("fast");
 	    }
@@ -77,6 +78,7 @@ $(document).ready(function() {
 		     $('#scrollToTop').fadeOut("fast");
 	    }
 	});
+*/
 	
 	$('#contactForm').submit(function() {
 		var contactForm = $('#contactForm');
