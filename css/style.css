@@ -603,6 +603,7 @@ h2 {
 	font-size: 4rem;
 	font-family: 'Bebas Neue';
 	text-align: center;
+	color: #333333;
 }
 h3 {
 	font-size: 2.5rem;
@@ -616,6 +617,7 @@ h4 {
 	font-family: 'Throw My Hands Up';
 	font-size: 2rem;
 	color: #17A2FF;
+	color: #00D0FF;
 	margin-bottom: 1rem;
 	display: inline-block;
 }
@@ -957,7 +959,6 @@ h1 {
 	padding: 3rem 0 0;
 }
 .portfolio {
-	background: #F5F5F5;
 }
 .portfolioItem {
 	color: #333;
@@ -968,6 +969,7 @@ h1 {
 }
 .portfolio h3 {
 	line-height: 0.9;
+	color: #333333;
 }
 .portfolioText {
 	padding: 1rem;
