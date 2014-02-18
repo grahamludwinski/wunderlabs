@@ -8,6 +8,17 @@ function scrollToLoc(location) {
 }
 
 $(document).ready(function() {
+
+	$('.fancybox').fancybox({
+		padding:0,
+		helpers : {
+			overlay : {
+				css : {
+					'background' : 'rgba(0,0,0,0.85)'
+				}
+			}
+		}
+	});
 	
 	//event handlers for responsive web design section
 	$('#phone').on('click', function() {
