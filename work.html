@@ -3,97 +3,105 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="Wunder Labs is a web design and development studio with a passion for creating modern, intuitive websites.">
+	<meta name="description" content="Wunder Labs is a web design and development studio that creating modern, intuitive websites.">
 	<meta author="Graham Ludwinski">
-	
+
 	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-	<meta name="apple-mobile-web-app-capable" content="yes" /> 
+	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-touch-fullscreen" content="yes" />
-	
+
 	<title>Wunder Labs</title>
-	
+
 	<link rel="icon" type="image/ico" href="img/favicon.ico"/>
-	
+	<link rel="apple-touch-icon" href="img/logo.png">
+
 	<!-- CSS -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/animations.css" />
-	<link rel="stylesheet" href="css/style.css" />
-	
 	<link rel="stylesheet" href="css/jquery.fancybox.css" />
-	
+
+	<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/animations.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+
 </head>
 
 <body>
 	<header>
 		<a href="index.html">
-			<img id="headerLogo" src="img/colorLogo.svg" />
+			<img id="headerLogo" src="img/logoOptimized.svg" alt="Wunder Labs logo" />
 			<h3 class="title">Wunder Labs</h3>
 		</a>
-		
+
 		<nav class="mainNav">
 			<li><a href="work.html">Work</a>
 			</li><li><a href="index.html#contact">Contact</a></li>
 		</nav>
 	</header>
-	
+
 	<div id="body">
-		
+
 		<section class="container portfolio">
-			
-			<div class="largeMiddle silver">
-				<h2 class="darker">Our Work</h2>
-			
-				<div class="half padded">
-					<img class="portfolioImage" src="img/neuron_dashboard.png" />
+
+			<div class="largeMiddle">
+				<h2 class="darker wow fadeInDown">Our Work</h2>
+
+				<div class="half padded wow fadeInLeft" id="neuron">
+					<img class="portfolioImage thumbnail" src="img/neuron_dashboard.png" />
 					<div class="thumbnails">
 						<a class="fancybox" href="img/neuron_dashboard.png" data-fancybox-group="neuron" title="HTML5 Analytics Dashboard"><img src="img/neuron_dashboard_thumb.png" alt="HTML5 Analytics Dashboard" /></a>
 						<a class="fancybox" href="img/neuron_dashboard_line.png" data-fancybox-group="neuron" title="HTML5 Analytics Dashboard"><img src="img/neuron_dashboard_line_thumb.png" alt="HTML5 Analytics Dashboard" /></a>
 						<a class="fancybox" href="img/neuron_login.png" data-fancybox-group="neuron" title="Login Page"><img src="img/neuron_login_thumb.png" alt="Login Page" /></a>
 					</div>
-				</div><div class="half padded">
+				</div><div class="half padded wow fadeInRight">
 					<h3>Neuron</h3>
 					<span class="handwrittenNote">Call Tracking and Analytics</span>
-					
+
 					<p>Neuron is a phone call tracking and analytics service.</p>
 					<p>Neuron is powered by <a href="http://www.twilio.com/" class="link">Twilio</a>, <a href="http://sailsjs.org/" class="link">Sails.js</a> (a MVC web framework built on express), and <a href="http://nodejs.org/" class="link">Node.js</a>.  Sails.js allowed us to produce a REST-ful internal API with almost no effort. It also sped up development dramatically by allowing us to fully embrace Model-View-Controller.</p>
-					<a href="http://neuron.wundering.com/dashboard" class="button portfolioLink">Visit demo</a>
+					<a href="http://neuron.wundering.com/dashboard" class="button portfolioLink">Visit demo <span class="fa fa-angle-right"></span></a>
 				</div>
-				
-				<div class="half padded">
+
+				<div class="half right padded wow fadeInLeft" id="wunder">
 					<h3>Wunder</h3>
 					<span class="handwrittenNote">Its pretty wonderful</span>
-					
+
 					<p>Wunder is an educational webapp that focuses on practice based learning.</p>
 					<p>This was a joint undertaking between 2 of Wunder Labs very own designers. Due to its interactive nature, we decided to build the backend with <a href="http://nodejs.org/" class="link">Node.js</a> and the <a href="http://expressjs.com/" class="link">Express</a> module to aid development.  This enabled us to share Javascript code between the frontend and backend, and scale the website when we experienced traffic fluctuation.</p>
-				</div><div class="half padded">
-					<img class="portfolioImage" src="img/wunder_login.png" />
+				</div><div class="half padded wow fadeInRight">
+					<img class="portfolioImage thumbnail" src="img/wunder_login.png" />
 					<div class="thumbnails">
-						<a class="fancybox" href="img/wunder_login.png" data-fancybox-group="wunder" title="Login Page"><img src="img/wunder_login_thumb.png" alt="" /></a>	
+						<a class="fancybox" href="img/wunder_login.png" data-fancybox-group="wunder" title="Login Page"><img src="img/wunder_login_thumb.png" alt="" /></a>
 						<a class="fancybox" href="img/wunder_dashboard.png" data-fancybox-group="wunder" title="Timed Quiz Page"><img src="img/wunder_dashboard_thumb.png" alt="" /></a>
 					</div>
 				</div>
-				
-				<div class="half center padded">
-					<img class="portfolioImage" src="img/iiTutoring_contact.png" />
+
+				<div class="half center padded wow fadeInLeft" id="iitutoring">
+					<img class="portfolioImage thumbnail" src="img/iiTutoring_contact.png" />
 					<div class="thumbnails">
-						<a class="fancybox" href="img/iitutoring_contact.png" data-fancybox-group="iitutoring" title="Contact Page"><img src="img/iitutoring_contact_thumb.png" alt="" /></a>	
+						<a class="fancybox" href="img/iitutoring_contact.png" data-fancybox-group="iitutoring" title="Contact Page"><img src="img/iitutoring_contact_thumb.png" alt="" /></a>
 						<a class="fancybox" href="img/iitutoring_pricing.png" data-fancybox-group="iitutoring" title="Pricing Page"><img src="img/iitutoring_pricing_thumb.png" alt="" /></a>
 					</div>
-				</div><div class="half padded">
+				</div><div class="half padded wow fadeInRight">
 					<h3>iiTutoring</h3>
 					<span class="handwrittenNote"></span>
 					<p>iiTutoring was a tutoring company based in Orange County. The website managed scheduling and hiring of tutors and had a live chat feature implemented via socket.io. iiTutoring was fully responsive and was built with many HTML5 and CSS3 features.</p>
 				</div>
-				
-				<div class="half right padded">
+
+				<div class="half right padded wow fadeInLeft" id="wander">
 					<h3>Wander</h3>
 					<span class="handwrittenNote">Find Beautiful hotels around the world</span>
 					<p>We wrote this custom designed responsive mobile app with phoneGap compiled to iOS, Android, and Windows Phone.  The app connects to a private API served from a Sails.js server.</p>
-					
-				</div><div class="half center padded alternateImage">
-					<img class="portfolioImage" src="img/wander_home.png" />
+
+				</div><div class="half center padded alternateImage wow fadeInRight">
+					<img class="portfolioImage thumbnail" src="img/wander_main.png" />
 					<div class="thumbnails">
-						<a class="fancybox" href="img/wander_home.png" data-fancybox-group="wander" title="Landing Page"><img src="img/wander_home_thumb.png" alt="" /></a>	
+						<a class="fancybox" href="img/wander_home.png" data-fancybox-group="wander" title="Landing Page"><img src="img/wander_home_thumb.png" alt="" /></a>
 						<a class="fancybox" href="img/wander_login.png" data-fancybox-group="wander" title="Login Page"><img src="img/wander_login_thumb.png" alt="" /></a>
 						<a class="fancybox" href="img/wander_signup.png" data-fancybox-group="wander" title="Sign Up Page"><img src="img/wander_signup_thumb.png" alt="" /></a>
 						<a class="fancybox" href="img/wander_settings.png" data-fancybox-group="wander" title="Settings Page"><img src="img/wander_settings_thumb.png" alt="" /></a>
@@ -101,26 +109,50 @@
 						<a class="fancybox" href="img/wander_slider.png" data-fancybox-group="wander" title="Carousel"><img src="img/wander_slider_thumb.png" alt="" /></a>
 					</div>
 				</div>
-				
-				<div class="half center padded">
-					<img class="portfolioImage" src="img/iPadPOS.png" />
-				</div><div class="half padded">
-					<h3>iPad Point of Sale</h3>
-					<span class="handwrittenNote">Business made easy</span>
-					<p>A project required us to build a custom iPad interface on top of the enterprise point of sale system, Micros. Our system synced with the locally hosted version of Micros and sent data back and forth to a cloud based server. Multiple iPads could then request the modified data from the cloud server. Integrating with Micros allowed customers to use their existing commerce data, while utilizing the efficiency and mobility of modern mobile technologies.</p>
-					
-				</div>
-				
+
 			</div>
-			
+
 		</section>
-		
+
 	</div>
-	
-	<footer>
+
+	<footer class="silver">
 		<p>2014 © Wunder Labs. All Right Reserved.</p>
 	</footer>
+
+
+	<!-- JS -->
+	<!-- <script src="js/jquery.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.fancybox').fancybox({
+				padding:0,
+				helpers : {
+					overlay : {
+						css : {
+							'background' : 'rgba(0,0,0,0.85)'
+						}
+					}
+				}
+			});
+		});
+	</script>
 	
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-48719704-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+	
+	ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+	
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	</script>
 </body>
 
 </html>
