@@ -1,0 +1,12 @@
+{
+  "name": "Wunderlabs",
+  "description": "A Web Development/Design Studio",
+  "author": "Graham Ludwinski",
+  "dependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-cssmin": "~0.9.0"
+  },
+  "devDependencies": {}
+}
